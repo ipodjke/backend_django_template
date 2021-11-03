@@ -131,6 +131,7 @@ dmypy.json
 .pyre/
 
 # Project static
-/django_static
+/static_django
 /.vscode
 /static
+/media
