@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+environs = "*"
+psycopg2-binary = "*"
+django-filter = "*"
+pillow = "*"
+gunicorn = "*"
+
+[dev-packages]
+flake8 = "*"
+flake8-quotes = "*"
+pep8-naming = "*"
+flake8-broken-line = "*"
+flake8-return = "*"
+flake8-isort = "*"
+pytest = "*"
+
+[requires]
+python_version = "3.9"

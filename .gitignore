@@ -104,6 +104,8 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.env.dev
+.env.prod
 env/
 venv/
 ENV/
@@ -127,3 +129,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project static
+/django_static
+/.vscode
+/static
