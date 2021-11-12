@@ -15,8 +15,11 @@ RUN apk update && \
 RUN pip install --upgrade pip && \
     pip install pipenv
 
-COPY . .
+COPY Pipfile .
+COPY Pipfile.lock .
 
 RUN pipenv install --system --deploy --dev
+
+COPY . .
 
 ENTRYPOINT ["/usr/src/app/backend/docker-entrypoint.sh"]
